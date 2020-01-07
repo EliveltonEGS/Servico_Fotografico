@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relario_servicos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9c4d1aa9-7566-4f73-81cd-4ef72a7142f7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="af7ddbc0-181a-43bd-99b4-90c94cee3c3c"/>
+	<parameter name="data_inicial" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="data_final" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     *,
+     tb_clientes."cli_nome" AS tb_clientes_cli_nome,
+     tb_clientes."cli_cpf" AS tb_clientes_cli_cpf,
+     tb_servicos."ser_valor" AS tb_servicos_ser_valor,
+     tb_servicos."ser_data" AS tb_servicos_ser_data,
+     tb_servicos."ser_numero" AS tb_servicos_ser_numero
+FROM
+     "public"."tb_clientes" tb_clientes INNER JOIN "public"."tb_servicos" tb_servicos ON tb_clientes."cli_codigo" = tb_servicos."ser_cli_codigo"
+
+where tb_servicos."ser_data" between $P{data_inicial} and $P{data_final} order by tb_servicos."ser_numero" desc;]]>
+	</queryString>
+	<field name="cli_codigo" class="java.lang.Integer"/>
+	<field name="cli_nome" class="java.lang.String"/>
+	<field name="cli_cpf" class="java.lang.String"/>
+	<field name="cli_telefone" class="java.lang.String"/>
+	<field name="cli_celular" class="java.lang.String"/>
+	<field name="cli_endereco" class="java.lang.String"/>
+	<field name="ser_codigo" class="java.lang.Integer"/>
+	<field name="ser_descricao" class="java.lang.String"/>
+	<field name="ser_valor" class="java.math.BigDecimal"/>
+	<field name="ser_data" class="java.sql.Date"/>
+	<field name="ser_cli_codigo" class="java.lang.Integer"/>
+	<field name="ser_numero" class="java.lang.Integer"/>
+	<field name="tb_clientes_cli_nome" class="java.lang.String"/>
+	<field name="tb_clientes_cli_cpf" class="java.lang.String"/>
+	<field name="tb_servicos_ser_valor" class="java.math.BigDecimal"/>
+	<field name="tb_servicos_ser_data" class="java.sql.Date"/>
+	<field name="tb_servicos_ser_numero" class="java.lang.Integer"/>
+	<variable name="SomaTotal" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{ser_valor}]]></variableExpression>
+	</variable>
+	<title>
+		<band height="69">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="29" uuid="6e4a3d97-66cc-432d-9dfa-4f1e83d6e060"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="16" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Rodrigo Oliveira]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="29" width="555" height="29" uuid="ec0d2951-e8f0-4ac7-97a0-2bac99780529"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="16" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Foto e Stúdio]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="20" backcolor="#333333" uuid="69d4fdb7-21bd-4281-83ae-2c9db774b792"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="41" height="20" forecolor="#FFFFFF" uuid="7632b17d-1181-4930-a307-e05f2f3cad8d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nº]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="0" width="84" height="20" forecolor="#FFFFFF" uuid="e537cc82-4313-43d2-a584-7b8b57f25d39"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="d1ce3daf-44f1-411c-b1a4-d8e5d0fb2ce8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="2907a186-34fd-4f75-bf18-d3eee62f2e5d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="4f26022b-9aac-477c-9d4c-f4ed7156130c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[DATA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="1" width="41" height="20" uuid="db5812bf-06f7-4beb-b04d-79ecc7948143"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="41" y="1" width="84" height="20" uuid="2b9b7c94-e650-4531-b9d5-78f98fbe9eec"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_clientes_cli_cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="125" y="1" width="230" height="20" uuid="50a4fee7-ce68-4679-9338-a6fda9385415"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_clientes_cli_nome}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="436" y="0" width="100" height="20" uuid="983c5b6c-26c7-4961-9dfd-49eb2e228e0e"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_valor}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="310" y="1" width="82" height="20" uuid="0309cd71-91ef-4c95-9e1f-3cc03ee9660c"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_data}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="417" y="1" width="19" height="20" uuid="25834103-40c7-4215-9db7-a007bebc8f70"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="9"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="22">
+			<rectangle>
+				<reportElement x="371" y="2" width="184" height="20" backcolor="#333333" uuid="1ff51c9c-e526-4de2-9594-9e9393c38a0c"/>
+			</rectangle>
+			<textField pattern="###0.00;(###0.00)" isBlankWhenNull="true">
+				<reportElement x="436" y="2" width="119" height="20" forecolor="#FFFFFF" backcolor="#333333" uuid="34f48009-9c9d-438b-995a-7a0b13cb0d09"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SomaTotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="417" y="2" width="19" height="20" forecolor="#FFFFFF" uuid="d20e3b50-6849-42f4-ac0a-bd89bc3ef6ed"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[R$]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="2" width="46" height="20" forecolor="#FFFFFF" uuid="4f8ebba0-aac1-4997-9b3b-428eb468d4aa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="170" pageHeight="200" columnWidth="150" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="220569b9-13c7-4988-913a-a48075dab4ac">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="numero" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     tb_clientes."cli_nome" AS tb_clientes_cli_nome,
+     tb_clientes."cli_cpf" AS tb_clientes_cli_cpf,
+     tb_servicos."ser_descricao" AS tb_servicos_ser_descricao,
+     tb_servicos."ser_valor" AS tb_servicos_ser_valor,
+     tb_servicos."ser_data" AS tb_servicos_ser_data,
+     tb_servicos."ser_numero" AS tb_servicos_ser_numero
+FROM
+     "public"."tb_clientes" tb_clientes INNER JOIN "public"."tb_servicos" tb_servicos ON tb_clientes."cli_codigo" = tb_servicos."ser_cli_codigo" where tb_servicos."ser_numero" = $P{numero}]]>
+	</queryString>
+	<field name="tb_clientes_cli_nome" class="java.lang.String"/>
+	<field name="tb_clientes_cli_cpf" class="java.lang.String"/>
+	<field name="tb_servicos_ser_descricao" class="java.lang.String"/>
+	<field name="tb_servicos_ser_valor" class="java.math.BigDecimal"/>
+	<field name="tb_servicos_ser_data" class="java.sql.Date"/>
+	<field name="tb_servicos_ser_numero" class="java.lang.Integer"/>
+	<title>
+		<band height="49" splitType="Stretch">
+			<rectangle radius="2">
+				<reportElement x="0" y="0" width="150" height="49" uuid="52eed2fd-2d1c-45fa-8c67-1c8dc067a6bd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="-2" width="150" height="12" uuid="d02f06f6-330e-4d35-8b91-233b48d621f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Rodrigo Oliveira]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5" width="149" height="14" uuid="107dabf0-2be4-415b-9437-522294798081"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Foto e Stúdio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="13" width="149" height="10" uuid="dec3d353-7ca4-4b10-97db-1c293169e2aa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Um novo conceito em Foto e Filmagem]]></text>
+			</staticText>
+			<rectangle radius="2">
+				<reportElement x="68" y="23" width="75" height="11" backcolor="#333333" uuid="823d6be4-307e-4a57-abe1-909b2fa2c208"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineStyle="Double"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="68" y="23" width="75" height="11" forecolor="#FFFFFF" uuid="bb23ce66-fb08-4ee0-a573-0afadd845ae9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[Celular: (43) 9.9640-2102]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="29" width="149" height="16" uuid="221434bd-5698-43ae-aa7e-025771dde25d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Rua Miguel Dias, 956 - Centro - JoaquimTávora - PR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="38" width="149" height="11" uuid="146ac1e9-9378-45d1-84f2-b065e881e6fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CNPJ: 14.503.032/0001-14]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="126" splitType="Stretch">
+			<rectangle radius="2">
+				<reportElement x="88" y="113" width="62" height="12" backcolor="#333333" uuid="575fba4a-24fc-4070-baa6-6e873a7fd367"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="0" y="40" width="150" height="73" uuid="9dfbd06d-2cac-43a7-93c5-89236763a7d0"/>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="0" y="0" width="150" height="44" uuid="67c17e97-98c9-4e8d-926c-ece087c109fc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="44" width="68" height="12" uuid="2fd73325-63e4-43b3-b53f-984fdfda70e3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discriminação]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="44" width="39" height="12" uuid="9bab93b5-3ad6-4638-a3ca-efffb1531b4e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preço Unit.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="44" width="36" height="12" uuid="54edb930-5371-4821-8e36-b90d7f2083ea"/>
+				<textElement verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total R$]]></text>
+			</staticText>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="116" y="114" width="33" height="11" forecolor="#FFFFFF" uuid="efcf3eb0-2fb8-44d3-b040-81800f1ccf6b"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_valor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="0" width="88" height="10" uuid="f6187478-8830-4ab5-88d8-ff7fd4eb6ed5"/>
+				<textElement textAlignment="Left">
+					<font size="5" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Nota Fiscal de Prestação de Serviço]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="10" height="10" forecolor="#FF0000" uuid="d9247c99-10a0-41f5-897f-7812dc083fd4"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Nº]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="10" width="10" height="10" uuid="1328890a-aa98-47eb-9fe3-24672d938725"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="5" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Em:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="20" width="10" height="10" uuid="c4a945aa-6774-4561-8b6e-a6a129785408"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="5" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Sr.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="30" width="11" height="10" uuid="994ca2ec-75ca-4bb5-bd91-50f312415a81"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="5" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cpf:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="113" width="20" height="12" forecolor="#FFFFFF" uuid="1389df3b-b211-4924-8bdd-3baf0c326b19"/>
+				<textElement>
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="71" y="44" width="1" height="69" uuid="489165ae-8cce-4599-93fb-a4a6abfb64b7"/>
+			</line>
+			<line>
+				<reportElement x="112" y="44" width="1" height="69" uuid="314a7580-7a15-4874-b7a6-33ddf6a1aad6"/>
+			</line>
+			<line>
+				<reportElement x="0" y="55" width="150" height="1" uuid="df709912-d8fa-456f-9616-d9227c6ff1e3"/>
+			</line>
+			<textField>
+				<reportElement x="14" y="20" width="130" height="10" uuid="00b59b34-38a9-4aaa-a3e9-22abfe230710"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_clientes_cli_nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="14" y="30" width="100" height="10" uuid="53b86d3d-3a18-484c-b644-9d3cf2dd35c9"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_clientes_cli_cpf}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="14" y="10" width="94" height="10" uuid="922d2ab5-2759-4bbb-bf24-b2ea2226e428"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="0" width="47" height="10" forecolor="#FF0000" uuid="0b0d734d-d662-4597-a34d-f8ccc7869106"/>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_numero}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="114" y="58" width="36" height="12" uuid="140bcd43-3bf4-41ad-a657-a0dcf696395d"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_valor}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="74" y="58" width="36" height="12" uuid="7540a0a5-e345-4277-958e-548b3f5a6759"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_valor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="58" width="69" height="55" uuid="ea7a70ca-1d6c-425c-912c-760dac9513a8"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_servicos_ser_descricao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

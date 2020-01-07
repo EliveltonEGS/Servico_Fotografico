@@ -1,0 +1,305 @@
+annotation.processing.enabled=true
+annotation.processing.enabled.in.editor=false
+annotation.processing.processors.list=
+annotation.processing.run.all.processors=true
+annotation.processing.source.output=${build.generated.sources.dir}/ap-source-output
+application.title=Rodrigo_Foto
+application.vendor=Elivelton G. Silva
+build.classes.dir=${build.dir}/classes
+build.classes.excludes=**/*.java,**/*.form
+# This directory is removed when the project is cleaned:
+build.dir=build
+build.generated.dir=${build.dir}/generated
+build.generated.sources.dir=${build.dir}/generated-sources
+# Only compile against the classpath explicitly listed here:
+build.sysclasspath=ignore
+build.test.classes.dir=${build.dir}/test/classes
+build.test.results.dir=${build.dir}/test/results
+# Uncomment to specify the preferred debugger connection transport:
+#debug.transport=dt_socket
+debug.classpath=\
+    ${run.classpath}
+debug.test.classpath=\
+    ${run.test.classpath}
+# Os arquivos em build.classes.dir que devem ser exclu\u00eddos do jar de distribui\u00e7\u00e3o
+dist.archive.excludes=
+# This directory is removed when the project is cleaned:
+dist.dir=dist
+dist.jar=${dist.dir}/Rodrigo_Foto.jar
+dist.javadoc.dir=${dist.dir}/javadoc
+endorsed.classpath=
+excludes=
+file.reference.ant-1.7.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\ant-1.7.1.jar
+file.reference.antlr-2.7.6.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\antlr-2.7.6.jar
+file.reference.asm-attrs.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\asm-attrs.jar
+file.reference.asm.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\asm.jar
+file.reference.barbecue-1.5-beta1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\barbecue-1.5-beta1.jar
+file.reference.barcode4j-2.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\barcode4j-2.1.jar
+file.reference.batik-anim.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-anim.jar
+file.reference.batik-awt-util.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-awt-util.jar
+file.reference.batik-bridge.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-bridge.jar
+file.reference.batik-css.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-css.jar
+file.reference.batik-dom.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-dom.jar
+file.reference.batik-ext.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-ext.jar
+file.reference.batik-gvt.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-gvt.jar
+file.reference.batik-parser.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-parser.jar
+file.reference.batik-script.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-script.jar
+file.reference.batik-svg-dom.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-svg-dom.jar
+file.reference.batik-svggen.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-svggen.jar
+file.reference.batik-transcoder.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-transcoder.jar
+file.reference.batik-util.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-util.jar
+file.reference.batik-xml.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\batik-xml.jar
+file.reference.bcel-5.2.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\bcel-5.2.jar
+file.reference.bsh-2.1b5.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\bsh-2.1b5.jar
+file.reference.castor-1.2.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\castor-1.2.jar
+file.reference.cglib-2.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\cglib-2.1.jar
+file.reference.cincom-jr-xmla.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\cincom-jr-xmla.jar
+file.reference.commons-beanutils-1.8.2.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-beanutils-1.8.2.jar
+file.reference.commons-collections-3.2.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-collections-3.2.1.jar
+file.reference.commons-dbcp-1.2.2.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-dbcp-1.2.2.jar
+file.reference.commons-digester-2.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-digester-2.1.jar
+file.reference.commons-javaflow-20060411.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-javaflow-20060411.jar
+file.reference.commons-logging-1.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-logging-1.1.jar
+file.reference.commons-math-1.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-math-1.0.jar
+file.reference.commons-pool-1.3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-pool-1.3.jar
+file.reference.commons-pool-1.6.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-pool-1.6.jar
+file.reference.commons-vfs-1.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\commons-vfs-1.0.jar
+file.reference.dom4j-1.6.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\dom4j-1.6.jar
+file.reference.ehcache-1.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\ehcache-1.1.jar
+file.reference.eigenbase-properties-1.1.0.10924.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\eigenbase-properties-1.1.0.10924.jar
+file.reference.eigenbase-resgen-1.3.0.11873.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\eigenbase-resgen-1.3.0.11873.jar
+file.reference.eigenbase-xom-1.3.0.11999.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\eigenbase-xom-1.3.0.11999.jar
+file.reference.ejb3-persistence.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\ejb3-persistence.jar
+file.reference.groovy-all-2.0.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\groovy-all-2.0.1.jar
+file.reference.hadoop-core-1.0.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hadoop-core-1.0.1.jar
+file.reference.hibernate-annotations.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hibernate-annotations.jar
+file.reference.hibernate-commons-annotations.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hibernate-commons-annotations.jar
+file.reference.hibernate3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hibernate3.jar
+file.reference.hive-common-0.8.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hive-common-0.8.1.jar
+file.reference.hive-exec-0.8.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hive-exec-0.8.1.jar
+file.reference.hive-jdbc-0.8.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hive-jdbc-0.8.1.jar
+file.reference.hive-metastore-0.8.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hive-metastore-0.8.1.jar
+file.reference.hive-service-0.8.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hive-service-0.8.1.jar
+file.reference.hsqldb-1.8.0-10.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\hsqldb-1.8.0-10.jar
+file.reference.iText-2.1.7.js2.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\iText-2.1.7.js2.jar
+file.reference.iTextAsian.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\iTextAsian.jar
+file.reference.jackson-annotations-2.1.4.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jackson-annotations-2.1.4.jar
+file.reference.jackson-core-2.1.4.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jackson-core-2.1.4.jar
+file.reference.jackson-databind-2.1.4.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jackson-databind-2.1.4.jar
+file.reference.jasperreports-5.6.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-5.6.0.jar
+file.reference.jasperreports-chart-themes-5.6.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-chart-themes-5.6.0.jar
+file.reference.jasperreports-core-renderer.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-core-renderer.jar
+file.reference.jasperreports-extensions-3.5.3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-extensions-3.5.3.jar
+file.reference.jasperreports-fonts-5.6.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-fonts-5.6.0.jar
+file.reference.jasperreports-functions-5.6.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-functions-5.6.0.jar
+file.reference.jasperreports-htmlcomponent-4.7.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-htmlcomponent-4.7.1.jar
+file.reference.jasperreports-htmlcomponent-5.0.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-htmlcomponent-5.0.1.jar
+file.reference.jasperreports-json.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-json.jar
+file.reference.jasperreports-jtidy-r938.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jasperreports-jtidy-r938.jar
+file.reference.javacup.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\javacup.jar
+file.reference.javassist-3.4.GA.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\javassist-3.4.GA.jar
+file.reference.jaxen-1.1.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jaxen-1.1.1.jar
+file.reference.jcommon-1.0.15.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jcommon-1.0.15.jar
+file.reference.jdt-compiler-3.1.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jdt-compiler-3.1.1.jar
+file.reference.jfreechart-1.0.12.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jfreechart-1.0.12.jar
+file.reference.joda-time-2.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\joda-time-2.1.jar
+file.reference.jpa.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jpa.jar
+file.reference.js-hive-datasource-1.0.4.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js-hive-datasource-1.0.4.jar
+file.reference.js-mongodb-datasource-1.0.0a.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js-mongodb-datasource-1.0.0a.jar
+file.reference.js_activation-1.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_activation-1.1.jar
+file.reference.js_axis-1.4patched.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_axis-1.4patched.jar
+file.reference.js_commons-codec-1.3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_commons-codec-1.3.jar
+file.reference.js_commons-discovery-0.2.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_commons-discovery-0.2.jar
+file.reference.js_commons-httpclient-3.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_commons-httpclient-3.1.jar
+file.reference.js_jasperserver-common-ws-4.7.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_jasperserver-common-ws-4.7.1.jar
+file.reference.js_jaxrpc.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_jaxrpc.jar
+file.reference.js_mail-1.4.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_mail-1.4.jar
+file.reference.js_saaj-api-1.3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_saaj-api-1.3.jar
+file.reference.js_wsdl4j-1.5.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\js_wsdl4j-1.5.1.jar
+file.reference.jta.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jta.jar
+file.reference.jxl-2.6.10.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\jxl-2.6.10.jar
+file.reference.libfb303-0.7.0.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\libfb303-0.7.0.jar
+file.reference.libthrift-0.9.0-snapshot.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\libthrift-0.9.0-snapshot.jar
+file.reference.log4j-1.2.15.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\log4j-1.2.15.jar
+file.reference.mondrian-3.2.0-13661-JS.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\mondrian-3.2.0-13661-JS.jar
+file.reference.mongo-java-driver-2.7.3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\mongo-java-driver-2.7.3.jar
+file.reference.olap4j-0.9.7.309-JS.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\olap4j-0.9.7.309-JS.jar
+file.reference.png-encoder-1.5.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\png-encoder-1.5.jar
+file.reference.poi-3.7-20101029.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\poi-3.7-20101029.jar
+file.reference.poi-ooxml-3.7-20101029.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\poi-ooxml-3.7-20101029.jar
+file.reference.poi-ooxml-schemas-3.7-20101029.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\poi-ooxml-schemas-3.7-20101029.jar
+file.reference.rex-0.8.1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\rex-0.8.1.jar
+file.reference.rex-20080421.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\rex-20080421.jar
+file.reference.rhino-1.7R3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\rhino-1.7R3.jar
+file.reference.saaj-api-1.3.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\saaj-api-1.3.jar
+file.reference.servlet-api-2.4.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\servlet-api-2.4.jar
+file.reference.slf4j-api-1.5.8.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\slf4j-api-1.5.8.jar
+file.reference.slf4j-log4j12-1.5.8.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\slf4j-log4j12-1.5.8.jar
+file.reference.spring.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\spring.jar
+file.reference.sqleonardo-2009.03.rc1.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\sqleonardo-2009.03.rc1.jar
+file.reference.swingx-2007_10_07.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\swingx-2007_10_07.jar
+file.reference.velocity-1.7-dep.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\velocity-1.7-dep.jar
+file.reference.xbean.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\xbean.jar
+file.reference.xml-apis-ext.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\xml-apis-ext.jar
+file.reference.xml-apis.jar=C:\\Desenvolvimento\\Bibliotecas\\Ireport\\xml-apis.jar
+includes=**
+jar.compress=false
+javac.classpath=\
+    ${libs.PostgreSQLDriver.classpath}:\
+    ${file.reference.ant-1.7.1.jar}:\
+    ${file.reference.antlr-2.7.6.jar}:\
+    ${file.reference.asm-attrs.jar}:\
+    ${file.reference.asm.jar}:\
+    ${file.reference.barbecue-1.5-beta1.jar}:\
+    ${file.reference.barcode4j-2.1.jar}:\
+    ${file.reference.batik-anim.jar}:\
+    ${file.reference.batik-awt-util.jar}:\
+    ${file.reference.batik-bridge.jar}:\
+    ${file.reference.batik-css.jar}:\
+    ${file.reference.batik-dom.jar}:\
+    ${file.reference.batik-ext.jar}:\
+    ${file.reference.batik-gvt.jar}:\
+    ${file.reference.batik-parser.jar}:\
+    ${file.reference.batik-script.jar}:\
+    ${file.reference.batik-svg-dom.jar}:\
+    ${file.reference.batik-svggen.jar}:\
+    ${file.reference.batik-transcoder.jar}:\
+    ${file.reference.batik-util.jar}:\
+    ${file.reference.batik-xml.jar}:\
+    ${file.reference.bcel-5.2.jar}:\
+    ${file.reference.bsh-2.1b5.jar}:\
+    ${file.reference.castor-1.2.jar}:\
+    ${file.reference.cglib-2.1.jar}:\
+    ${file.reference.cincom-jr-xmla.jar}:\
+    ${file.reference.commons-beanutils-1.8.2.jar}:\
+    ${file.reference.commons-collections-3.2.1.jar}:\
+    ${file.reference.commons-dbcp-1.2.2.jar}:\
+    ${file.reference.commons-digester-2.1.jar}:\
+    ${file.reference.commons-javaflow-20060411.jar}:\
+    ${file.reference.commons-logging-1.1.jar}:\
+    ${file.reference.commons-math-1.0.jar}:\
+    ${file.reference.commons-pool-1.3.jar}:\
+    ${file.reference.commons-pool-1.6.jar}:\
+    ${file.reference.commons-vfs-1.0.jar}:\
+    ${file.reference.dom4j-1.6.jar}:\
+    ${file.reference.ehcache-1.1.jar}:\
+    ${file.reference.eigenbase-properties-1.1.0.10924.jar}:\
+    ${file.reference.eigenbase-resgen-1.3.0.11873.jar}:\
+    ${file.reference.eigenbase-xom-1.3.0.11999.jar}:\
+    ${file.reference.ejb3-persistence.jar}:\
+    ${file.reference.groovy-all-2.0.1.jar}:\
+    ${file.reference.hadoop-core-1.0.1.jar}:\
+    ${file.reference.hibernate-annotations.jar}:\
+    ${file.reference.hibernate-commons-annotations.jar}:\
+    ${file.reference.hibernate3.jar}:\
+    ${file.reference.hive-common-0.8.1.jar}:\
+    ${file.reference.hive-exec-0.8.1.jar}:\
+    ${file.reference.hive-jdbc-0.8.1.jar}:\
+    ${file.reference.hive-metastore-0.8.1.jar}:\
+    ${file.reference.hive-service-0.8.1.jar}:\
+    ${file.reference.hsqldb-1.8.0-10.jar}:\
+    ${file.reference.iText-2.1.7.js2.jar}:\
+    ${file.reference.iTextAsian.jar}:\
+    ${file.reference.jackson-annotations-2.1.4.jar}:\
+    ${file.reference.jackson-core-2.1.4.jar}:\
+    ${file.reference.jackson-databind-2.1.4.jar}:\
+    ${file.reference.jasperreports-5.6.0.jar}:\
+    ${file.reference.jasperreports-chart-themes-5.6.0.jar}:\
+    ${file.reference.jasperreports-core-renderer.jar}:\
+    ${file.reference.jasperreports-extensions-3.5.3.jar}:\
+    ${file.reference.jasperreports-fonts-5.6.0.jar}:\
+    ${file.reference.jasperreports-functions-5.6.0.jar}:\
+    ${file.reference.jasperreports-htmlcomponent-4.7.1.jar}:\
+    ${file.reference.jasperreports-htmlcomponent-5.0.1.jar}:\
+    ${file.reference.jasperreports-json.jar}:\
+    ${file.reference.jasperreports-jtidy-r938.jar}:\
+    ${file.reference.javacup.jar}:\
+    ${file.reference.javassist-3.4.GA.jar}:\
+    ${file.reference.jaxen-1.1.1.jar}:\
+    ${file.reference.jcommon-1.0.15.jar}:\
+    ${file.reference.jdt-compiler-3.1.1.jar}:\
+    ${file.reference.jfreechart-1.0.12.jar}:\
+    ${file.reference.joda-time-2.1.jar}:\
+    ${file.reference.jpa.jar}:\
+    ${file.reference.js-hive-datasource-1.0.4.jar}:\
+    ${file.reference.js-mongodb-datasource-1.0.0a.jar}:\
+    ${file.reference.js_activation-1.1.jar}:\
+    ${file.reference.js_axis-1.4patched.jar}:\
+    ${file.reference.js_commons-codec-1.3.jar}:\
+    ${file.reference.js_commons-discovery-0.2.jar}:\
+    ${file.reference.js_commons-httpclient-3.1.jar}:\
+    ${file.reference.js_jasperserver-common-ws-4.7.1.jar}:\
+    ${file.reference.js_jaxrpc.jar}:\
+    ${file.reference.js_mail-1.4.jar}:\
+    ${file.reference.js_saaj-api-1.3.jar}:\
+    ${file.reference.js_wsdl4j-1.5.1.jar}:\
+    ${file.reference.jta.jar}:\
+    ${file.reference.jxl-2.6.10.jar}:\
+    ${file.reference.libfb303-0.7.0.jar}:\
+    ${file.reference.libthrift-0.9.0-snapshot.jar}:\
+    ${file.reference.log4j-1.2.15.jar}:\
+    ${file.reference.mondrian-3.2.0-13661-JS.jar}:\
+    ${file.reference.mongo-java-driver-2.7.3.jar}:\
+    ${file.reference.olap4j-0.9.7.309-JS.jar}:\
+    ${file.reference.png-encoder-1.5.jar}:\
+    ${file.reference.poi-3.7-20101029.jar}:\
+    ${file.reference.poi-ooxml-3.7-20101029.jar}:\
+    ${file.reference.poi-ooxml-schemas-3.7-20101029.jar}:\
+    ${file.reference.rex-0.8.1.jar}:\
+    ${file.reference.rex-20080421.jar}:\
+    ${file.reference.rhino-1.7R3.jar}:\
+    ${file.reference.saaj-api-1.3.jar}:\
+    ${file.reference.servlet-api-2.4.jar}:\
+    ${file.reference.slf4j-api-1.5.8.jar}:\
+    ${file.reference.slf4j-log4j12-1.5.8.jar}:\
+    ${file.reference.spring.jar}:\
+    ${file.reference.sqleonardo-2009.03.rc1.jar}:\
+    ${file.reference.swingx-2007_10_07.jar}:\
+    ${file.reference.velocity-1.7-dep.jar}:\
+    ${file.reference.xbean.jar}:\
+    ${file.reference.xml-apis-ext.jar}:\
+    ${file.reference.xml-apis.jar}
+# Space-separated list of extra javac options
+javac.compilerargs=
+javac.deprecation=false
+javac.external.vm=true
+javac.processorpath=\
+    ${javac.classpath}
+javac.source=1.8
+javac.target=1.8
+javac.test.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}:\
+    ${libs.junit_4.classpath}:\
+    ${libs.hamcrest.classpath}
+javac.test.processorpath=\
+    ${javac.test.classpath}
+javadoc.additionalparam=
+javadoc.author=false
+javadoc.encoding=${source.encoding}
+javadoc.noindex=false
+javadoc.nonavbar=false
+javadoc.notree=false
+javadoc.private=false
+javadoc.splitindex=true
+javadoc.use=true
+javadoc.version=false
+javadoc.windowtitle=
+main.class=main.Principal
+manifest.file=manifest.mf
+meta.inf.dir=${src.dir}/META-INF
+mkdist.disabled=false
+platform.active=default_platform
+run.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}
+# Space-separated list of JVM arguments used when running the project.
+# You may also define separate properties like run-sys-prop.name=value instead of -Dname=value.
+# To set system properties for unit tests define test-sys-prop.name=value:
+run.jvmargs=
+run.test.classpath=\
+    ${javac.test.classpath}:\
+    ${build.test.classes.dir}
+source.encoding=UTF-8
+src.dir=src
+test.src.dir=test
